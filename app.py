@@ -4,6 +4,8 @@ import joblib
 import numpy as np
 import json
 
+# URL https://vid-diabetes-prediction.herokuapp.com/
+
 app = Flask(__name__)
 
 @app.route("/")
