@@ -28,7 +28,7 @@ def diabetes_pred():
     input = np.array([[pregnancies, glucose, bloodpressure, skinthickness, insulin, bmi, dpf, age]])
     result = model.predict(input)[0]
     
-    return json.dumps({'diabetes':str(result)})
+    return str(result)
 
 if __name__ == "__main__":
     app.run(debug=True)
